@@ -19,6 +19,7 @@ Serving the HTML pages.
 testing the web browser.
 
 ## PROGRAM:
+~~~
 from http.server import HTTPServer, BaseHTTPRequestHandler
 content="""
 <!DOCTYPE html>
@@ -44,6 +45,7 @@ server_address = ('',8080)
 httpd = HTTPServer(server_address,myhandler)
 print("my webserver is running...")
 httpd.serve_forever()
+~~~
 
 ## OUTPUT:
 ![output](./yashuweb.png)
